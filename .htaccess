@@ -1,0 +1,122 @@
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [NC,L] 
+
+    RewriteEngine on 
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.*)$ $1.html [NC,L]
+    
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /travels/
+
+    # Rewrite for index.html
+    RewriteRule ^$ index.html [L]
+
+    # Rewrite for page-login.html
+    RewriteRule ^$ page-login.php [L]
+
+    # Rewrite for index.html
+    RewriteRule ^$ index.php [L]
+
+    # Rewrite for sign_up.html
+    RewriteRule ^$ register.php [L]
+
+    # Rewrite for sign_up.html
+    RewriteRule ^$ forget_password.php [L]
+
+    # Rewrite for add_booking.html
+    RewriteRule ^$ add_booking.php [L]
+
+    # Rewrite for add-payment.html
+    RewriteRule ^$ add_payment.php [L]
+    
+    # Rewrite for add_travellers.html
+    RewriteRule ^$ add_travellers.php [L]
+    
+    # Rewrite for booking_invoice.html
+     RewriteRule ^$ booking_invoice.php [L]
+
+    # Rewrite for checkout.html
+    RewriteRule ^$ checkout.php [L]
+
+    # Rewrite for stk_initiate.html
+    RewriteRule ^$ stk_initiate.php [L]
+
+    # Rewrite for supdate_profile.html
+    RewriteRule ^$ update_profile.php [L]
+
+    # Rewrite for update.html
+    RewriteRule ^$ fupdate.php [L]
+
+    # Rewrite for my_bookings.html
+    RewriteRule ^$ my_bookings.php [L]
+
+    # Rewrite for traveller_details.html
+    RewriteRule ^$ traveller_details.php [L]
+
+   # Rewrite for payment_history.html
+   RewriteRule ^$ payment_history.php [L]
+   
+       # Rewrite for about.html
+       RewriteRule ^$ about.html [L]
+
+       # Rewrite for settings.html
+       RewriteRule ^$ settings.php [L]
+   
+       # Rewrite for invoice.html
+       RewriteRule ^$ invoice.php [L]
+   
+       # Rewrite for sms_setting.html
+       RewriteRule ^$ sms_setting.php [L]
+   
+       # Rewrite for email_setup.html
+       RewriteRule ^$ femail_setup.php [L]
+   
+       # Rewrite for booking_report.html
+       RewriteRule ^$ booking_report.php [L]
+   
+       # Rewrite for expense_report.html
+       RewriteRule ^$ expense_report.php [L]
+       
+       # Rewrite for payment_details.html
+       RewriteRule ^$ payment_details.php [L]
+       
+       # Rewrite for currency_details.html
+        RewriteRule ^$ currency_details.php [L]
+   
+       # Rewrite for finance_details.html
+       RewriteRule ^$ finance_details.php [L]
+   
+       # Rewrite for expense_details.html
+       RewriteRule ^$ expense_details.php [L]
+   
+       # Rewrite for expense_category_details.html
+       RewriteRule ^$ expense_category_details.php [L]
+   
+       # Rewrite for tax_details.html
+       RewriteRule ^$ tax_details.php [L]
+   
+       # Rewrite for my_bookings.html
+       RewriteRule ^$ my_bookings.php [L]
+   
+       # Rewrite for package_details.html
+       RewriteRule ^$ package_details.php [L]
+   
+      # Rewrite for booking_details.html
+      RewriteRule ^$ booking_details.php [L]
+      
+     # Rewrite for logout.html
+     RewriteRule ^$ logout.php [L]
+
+      # Rewrite for teble-datatable.html
+      RewriteRule ^$ teble-datatable.php [L]
+
+
+
+</IfModule>
+
+

@@ -1,0 +1,170 @@
+{ "Body":
+        { "stkCallback": { "MerchantRequestID": "d6a0-45d7-9671-a558821cf17e27694327",
+                        "CheckoutRequestID": "ws_CO_05032024004206306799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 2 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SC5517QA5V" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240305004218 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body":
+        { "stkCallback": { "MerchantRequestID": "8bec-40c2-b196-6e4107441cba87125705",
+                        "CheckoutRequestID": "ws_CO_05032024012922523758824173",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SC5018D4SQ" },
+                                        { "Name": "TransactionDate", "Value": 20240305012934 },
+                                        { "Name": "PhoneNumber", "Value": 254758824173 } ] } } } }
+{ "Body":
+        { "stkCallback": { "MerchantRequestID": "b31f-4564-95fc-12ecddde605b68458184",
+                        "CheckoutRequestID": "ws_CO_06032024115354390799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SC69621OTR" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240306115405 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "fdf3-4068-b0a9-6cfe5aaad5f368572585",
+                        "CheckoutRequestID": "ws_CO_06032024134216146799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SC626FVWQ2" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240306134226 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "f1e8-4d0f-a681-489d3f41589e98799233",
+                        "CheckoutRequestID": "ws_CO_06032024135458826799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SC636HJX53" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240306135506 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+
+{ "Body":
+        { "stkCallback": { "MerchantRequestID": "1a32-4986-81f8-26dacfcbf00796589300",
+                        "CheckoutRequestID": "ws_CO_06032024232154932799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 2 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SC658OM8T9" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240306232205 }
+                                        , { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "847c-4573-85db-96a68dacad1970477566",
+                        "CheckoutRequestID": "ws_CO_11032024005246910799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 2 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCB0NFCEJ2" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240311005256 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "81cb-4689-a78f-634af82888b77773750",
+                        "CheckoutRequestID": "ws_CO_11032024012646221799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCB2NFSGBY" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240311012655 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "81cb-4689-a78f-634af82888b77788193",
+                        "CheckoutRequestID": "ws_CO_11032024020522945799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 5 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCB0NG61JA" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240311020531 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "b142-4f5f-b5fc-6567c8885b4c99227652",
+                        "CheckoutRequestID": "ws_CO_11032024020706184799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 3 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCB0NG6V2W" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240311020714 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "1a32-4986-81f8-26dacfcbf007105010686",
+                        "CheckoutRequestID": "ws_CO_11032024132604478799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCB7OR4AGB" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240311132612 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+
+{ "Body": { "stkCallback": { "MerchantRequestID": "fdf3-4068-b0a9-6cfe5aaad5f379918786",
+                        "CheckoutRequestID": "ws_CO_13032024160232947799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully."
+                        , "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCD1WF17IN" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240313160242 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "1a32-4986-81f8-26dacfcbf007113210993",
+                        "CheckoutRequestID": "ws_CO_15032024234135299799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCF36BZJZ7" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240315234146 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "b31f-4564-95fc-12ecddde605b83741848",
+                        "CheckoutRequestID": "ws_CO_15032024235330109799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 3 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCF76CDGD7" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240315235341 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "51dd-4635-bbb6-170aeb781b92106077205",
+                        "CheckoutRequestID": "ws_CO_16032024141340289799086123",
+                        "ResultCode": 1, "ResultDesc": "The balance is insufficient for the transaction." } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "db57-40e1-af85-2424fab5a2e684484491",
+                        "CheckoutRequestID": "ws_CO_16032024142712285799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 2 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCG67WKTYY" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240316142720 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "fdf3-4068-b0a9-6cfe5aaad5f398142603",
+                        "CheckoutRequestID": "ws_CO_21032024234836709799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCL5R9I763" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240321234846 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "fdf3-4068-b0a9-6cfe5aaad5f399289577",
+                        "CheckoutRequestID": "ws_CO_22032024130118325799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCM7SIBZZZ" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240322130126 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "6b35-466c-bec6-418f91c4479a103232573",
+                        "CheckoutRequestID": "ws_CO_23032024183502995799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCN6X9DFJM" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240323183512 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "db57-40e1-af85-2424fab5a2e6108850744",
+                        "CheckoutRequestID": "ws_CO_25032024154307898799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCP246IJW8" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240325154315 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+                                        
+{ "Body": { "stkCallback": { "MerchantRequestID":"847c-4573-85db-96a68dacad19104805249,
+                        "CheckoutRequestID": "ws_CO_26032024081601346799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCQ06AVREW" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240326081613 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "db57-40e1-af85-2424fab5a2e6110680181",
+                        "CheckoutRequestID": "ws_CO_26032024093054716799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SCQ86IHB7O" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240326093105 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "3fec-4d4e-8899-f63434996274116574224",
+                        "CheckoutRequestID": "ws_CO_30032024095840232795225009",
+                        "ResultCode": 1032, "ResultDesc": "Request cancelled by user" } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "b31f-4564-95fc-12ecddde605b130180484",
+                        "CheckoutRequestID": "ws_CO_02042024092719363799086123",
+                        "ResultCode": 1037, "ResultDesc": "DS timeout user cannot be reached" } } }
+{ "Body": { "stkCallback": { "MerchantRequestID": "6b35-466c-bec6-418f91c4479a137503356",
+                        "CheckoutRequestID": "ws_CO_06042024095228331799086123",
+                        "ResultCode": 0, "ResultDesc": "The service request is processed successfully.",
+                        "CallbackMetadata": { "Item": [ { "Name": "Amount", "Value": 1 },
+                                        { "Name": "MpesaReceiptNumber", "Value": "SD60B8ZHBS" },
+                                        { "Name": "Balance" }, { "Name": "TransactionDate", "Value": 20240406095244 },
+                                        { "Name": "PhoneNumber", "Value": 254799086123 } ] } } } }
