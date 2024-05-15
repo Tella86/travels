@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
 	<title>PMT | Home</title>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
 	<meta name="keywords" content="" />
@@ -18,26 +17,120 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
-	
 
-	
+
+
 	<link rel="stylesheet" href="css/bootstrap.css">
-	
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	
-	
 
-	
-	
-	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<script src="client.js"></script>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	  const socket = io(); // Connect to the server using Socket.IO
+	</script>
+
+
+
+
 </head>
 
 
 
 
 <body>
+	<style>
+		/* CSS for blinking animation */
+		@keyframes blink {
+			0% {
+				color: red;
+			}
+
+			50% {
+				color: transparent;
+			}
+
+			100% {
+				color: red;
+			}
+		}
+
+		#alertContainer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			/* Ensure full viewport height */
+		}
+
+		/* Apply blinking animation to alert message */
+		#alertMessage {
+			animation: blink 1s infinite;
+			position: center;
+		}
+
+		#emergencyBtn {
+			position: fixed;
+			top: 50px;
+			/* Adjust top position */
+			right: 10px;
+			/* Adjust right position */
+			z-index: 9999;
+			/* Ensure it appears on top of other content */
+		}
+	</style>
+	<br>
+	<div id="alertMessage"></div>
+	<button id="emergencyBtn" style="background-color: red; border-radius: 5px; font-size: large; color: white;">Emergency</button>
+<script>
+	function handleEmergencyClick() {
+    // Send notification to the system
+    sendNotification("Vessel Msafiri Express is in danger!");
+	
+    // Display alert message and apply blinking animation
+    var alertMessage = document.getElementById("alertMessage");
+    if (alertMessage) {
+        alertMessage.innerText = "Vessel Msafiri Express is in danger!";
+        // Apply blinking animation if needed
+        alertMessage.classList.add("blink");
+    }
+	
+    // Play sound
+    var audio = new Audio('settings/alert_sound.wav');
+    audio.play().catch(function(error) {
+        console.error("Error playing audio:", error);
+    });
+
+    console.log("Audio played");
+	socket.emit('emergency', 'Vessel Msafiri Express is in danger!');
+}
+
+		// Function to send notification to email
+		function sendEmailNotification(message) {
+			// Here you would typically call an API to send an email
+			// For demonstration, we'll log the message to console
+			console.log("Email notification sent: " + message);
+		}
+
+		// Function to send notification to mobile
+		function sendSMSNotification(message) {
+			// Here you would typically call an API to send an SMS
+			// For demonstration, we'll log the message to console
+			console.log("SMS notification sent: " + message);
+		}
+
+		// Function to send notification to email and mobile
+		function sendNotification(message) {
+			// Call functions to send email and SMS notifications
+			sendEmailNotification(message);
+			sendSMSNotification(message);
+		}
+
+		// Attach event listener to the emergency button
+		document.getElementById("emergencyBtn").addEventListener("click", handleEmergencyClick);
+	</script>
 	<style>
 		img.logo {
 			width: 70px;
@@ -47,29 +140,31 @@
 			left: 0;
 		}
 	</style>
-				<span><img src="admin/settings/logo.png" style="height:65px; width: auto" alt="homepage" class="dark-logo" /></span>
-						</a>
-					
-	
+	<span><img src="admin/settings/logo.png" style="height:65px; width: auto" alt="homepage" class="dark-logo" /></span>
+	</a>
+
+
 	<div class="banner_w3lspvt he-codes">
 		<div class="container-fluid">
 			<div class="banner-text pl-lg-5 pl-sm-4 ml-lg-3">
-				
+
 				<h1 class="my-md-4 my-3" style="color: black;">PWANI MARINE TRAVELS</h1>
 				<h2 style="color: black;">Enjoy Nature & Adventure</h2>
 				<a href="user/page-login" class="btn button-style mt-5" style="background-color: green;">User Login</a>
 				<a href="admin/page-login" class="btn button-style mt-5" style="background-color: blue;">Admin Login</a>
+				<a href="user/map" class="btn button-style mt-5" style="background-color: rgb(0, 195, 255);"
+					target="_blank">Truck Vessel</a>
 			</div>
 		</div>
-		
+
 		<div class="wthree_copy_right text-right ml-auto mr-sm-5 mr-4">
 			<p class="text-li">
 
 			</p>
 		</div>
-		
+
 	</div>
-	
+
 
 </body>
 

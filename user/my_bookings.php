@@ -94,7 +94,10 @@ $myemail = $_SESSION['email'];}
                                 <tbody>
 
                                     <?php
-include"config.php";
+$servername = 'localhost';
+$username = 'root';
+$password = 'Elon2508/*-';
+$dbname = 'tour1';
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -106,10 +109,10 @@ try {
     $data=$stmt->fetchAll();
 
                                                 foreach ($data as $value) {
-$stmt1 = $conn->prepare("SELECT * FROM travellers where id='".$value['traveller_id']."'");
+$stmt1 = $conn->prepare("SELECT * FROM travellers  where id='".$value['traveller_id']."'");
 $stmt1->execute();
 $abc = $stmt1->setFetchMode(PDO::FETCH_ASSOC); 
-    $cust=$stmt1->fetch(PDO::FETCH_ASSOC);
+    $name=$stmt1->fetch(PDO::FETCH_ASSOC);
 
 
  $stmt2 = $conn->prepare("SELECT * FROM packages where id='".$value['package_id']."'");
@@ -134,7 +137,7 @@ $stmt3->execute();
                                     <tr>
 
                                         <td style="width:10px"><?php echo $value['id'];?></td>
-                                        <td style="width:20px"><?php echo $cust['name'];?></td>
+                                        <td style="width:20px"><?php echo $name['name'];?></td>
 
                                         <td style="width:40px"><?php echo $package['pname'];?></td>
                                         <td style="width:10px"><?php echo $value['state_id'];?></td>

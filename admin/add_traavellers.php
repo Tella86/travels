@@ -90,10 +90,12 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group has-danger">
-                                        <label class="control-label">Mobile </label>
-                                        <input type="text" class="form-control" id="val-digits" name="val-digits"
-                                            placeholder="Enter Your Mobile No." maxlength="10" required="">
+                                        <div class="form-group has-danger">
+                                            <label class="control-label">Mobile </label>
+                                            <input type="tel" class="form-control" name="val-digits"
+                                                placeholder="Enter Your Mobile No." pattern=^(?:\+2547|07|7)\d{8}$
+                                                maxlength="14" required>
+
                                     </div>
                                 </div>
 

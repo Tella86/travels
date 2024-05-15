@@ -98,8 +98,8 @@
                                         <div class="form-group has-danger">
                                             <label class="control-label">Mobile </label>
                                             <input type="tel" class="form-control" name="val-digits"
-                                                placeholder="Enter Your Mobile No." pattern="^\+2547\d{8}$"
-                                                maxlength="10" required>
+                                                placeholder="Enter Your Mobile No." pattern=^(?:\+2547|07|7)\d{8}$
+                                                maxlength="14" required>
 
                                         </div>
                                     </div>

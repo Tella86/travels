@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vessel Alert</title>
+<style>
+  /* CSS for blinking animation */
+  @keyframes blink {
+    0% { color: red; }
+    50% { color: transparent; }
+    100% { color: red; }
+  }
+
+  /* Apply blinking animation to alert message */
+  #alertMessage {
+    animation: blink 1s infinite;
+  }
+</style>
+</head>
+<body>
+  <div id="alertMessage"></div>
+  <button id="emergencyBtn">Emergency</button>
+
+  <script>
+    // Function to handle emergency button click
+    function handleEmergencyClick() {
+      // Send notification to the system
+      sendNotification("Vessel Masfiri Express is in danger!");
+
+      // Display alert message and apply blinking animation
+      var alertMessage = document.getElementById("alertMessage");
+      alertMessage.innerText = "Vessel Masfiri Express is in danger!";
+      
+      // Play sound
+      var audio = new Audio('alert_sound.mp3');
+      audio.play();
+    }
+
+    // Function to send notification to email
+    function sendEmailNotification(message) {
+      // Here you would typically call an API to send an email
+      // For demonstration, we'll log the message to console
+      console.log("Email notification sent: " + message);
+    }
+
+    // Function to send notification to mobile
+    function sendSMSNotification(message) {
+      // Here you would typically call an API to send an SMS
+      // For demonstration, we'll log the message to console
+      console.log("SMS notification sent: " + message);
+    }
+
+    // Function to send notification to email and mobile
+    function sendNotification(message) {
+      // Call functions to send email and SMS notifications
+      sendEmailNotification(message);
+      sendSMSNotification(message);
+    }
+
+    // Attach event listener to the emergency button
+    document.getElementById("emergencyBtn").addEventListener("click", handleEmergencyClick);
+  </script>
+
+</body>
+</html>

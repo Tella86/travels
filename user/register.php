@@ -1,35 +1,58 @@
 <?php
+session_start(); // Start session
+
 include "config.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['fullname'], $_POST['email'], $_POST['password'], $_POST['contact'])) {
+    if (isset($_POST['uname'], $_POST['email'], $_POST['password'], $_POST['contact'])) {
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $fullname    = $_POST['fullname'];
+            $uname    = $_POST['uname'];
             $email    = $_POST['email'];
             $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hash the password
             $contact  = $_POST['contact'];
+            // $photo    = $_POST['photo'];
+            // $docs     = $_POST['docs'];
 
-            $sql  = "INSERT INTO register (fullname, email, password, contact) VALUES (:fullname, :email, :password, :contact)";
+            $sql  = "INSERT INTO register (uname, email, password, contact) VALUES (:uname, :email, :password, :contact)";
             $stmt = $conn->prepare($sql);
-            $stmt->bindParam(':fullname', $fullname);
+            $stmt->bindParam(':uname', $uname);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':password', $password);
             $stmt->bindParam(':contact', $contact);
+            // $stmt->bindParam(':photo', $photo);
+            // $stmt->bindParam(':docs', $docs);
             $stmt->execute();
 
             $_SESSION['reply'] = "New record created successfully";
-            header("Location:page-login"); // Redirect after successful registration
+            // header("Location: page-login"); // Redirect after successful registration
+            ?>
+            <div class="popup popup--icon -success js_success-popup popup--visible">
+            <div class="popup__background"></div>
+            <div class="popup__content">
+            <h3 class="popup__content__title">
+            Success 
+            </h1>
+            <p>Registered Successfully</p> 
+            <p>
+            
+            <?php echo "<script>setTimeout(\"location.href = 'page-login';\",1500);</script>"; ?>
+            </p>
+            </div>
+            </div> 
+        <?php
             exit();
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
         $conn = null;
     } else {
-        echo "All fields are required";
-    }
+        echo "All fields are required";   }
+
+       
+     
 }
 ?>
 
@@ -77,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <form method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>Full Name</label>
-                                        <input type="text" class="form-control" placeholder="Full Name" name="fullname"
+                                        <input type="text" class="form-control" placeholder="uame" name="uname"
                                             required>
                                     </div>
                                     <div class="form-group">
@@ -92,8 +115,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </div>
                                     <div class="form-group">
                                         <label>Contact No</label>
-                                        <input type="tel" maxlength="10" class="form-control" placeholder="Contact No"
-                                            name="contact" required>
+                                        <input type="tel" maxlength="14" class="form-control" placeholder="Contact No"
+                                            name="contact"pattern=^(?:\+2547|07|7)\d{8}$ required>
                                     </div>
                                     <div class="form-group">
                                         <label>Photo</label>

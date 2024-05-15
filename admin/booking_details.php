@@ -1,5 +1,5 @@
 <?php
-require_once('check_login.php');
+session_start();
 ?>
 <?php include"header.php"?>
 
@@ -67,7 +67,7 @@ require_once('check_login.php');
 
                                         <th style="margin-left: 5px">Adv</th>
 
-                                        <th style="width:10px">Act</th>
+                                        <th style="width:20px">Act</th>
 
                                     </tr>
                                 </thead>
@@ -86,7 +86,7 @@ require_once('check_login.php');
 
                                         <th style="margin-left: 5px">Adv</th>
 
-                                        <th style="margin-left: 5px">Act</th>
+                                        <th style="margin-left: 10px">Act</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
@@ -110,7 +110,7 @@ try {
 $stmt1 = $conn->prepare("SELECT * FROM travellers where id='".$value['traveller_id']."'");
 $stmt1->execute();
 $abc = $stmt1->setFetchMode(PDO::FETCH_ASSOC); 
-    $cust=$stmt1->fetch(PDO::FETCH_ASSOC);
+    $name=$stmt1->fetch(PDO::FETCH_ASSOC);
 
 
  $stmt2 = $conn->prepare("SELECT * FROM packages where id='".$value['package_id']."'");
@@ -152,7 +152,7 @@ $stmt3->execute();
                                     <tr>
 
                                         <td style="width:10px"><?php echo $value['id'];?></td>
-                                        <td style="width:5px"><?php echo $name;?></td>
+                                        <td style="width:5px"><?php echo $name['name'];?></td>
                                         <td style="width:5px"><?php echo $value['state_id'];?></td>
                                         <td style="width:10px"><?php echo $package['pname'];?></td>
                                         <td style="width:10px"><?php echo $value['no_of_adults'];?></td>

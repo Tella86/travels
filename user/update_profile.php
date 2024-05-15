@@ -25,7 +25,7 @@ try {
       $state_name=$row['state_name'];
       $mobile=$row['mobile'];
       $address=$row['address'];  
-      $img=$row['photo'];   
+      $file=$row['photo'];   
 
     $stmt9 = $conn->prepare("SELECT id,state_name FROM travellers group by state_name"); 
     $stmt9->execute();
@@ -131,8 +131,8 @@ $conn = null;
                                         <div class="form-group">
                                             <label class="control-label">Image</label>
                                             <input type="file" name="img" class="form-control">
-                                            <img src="../admin/img/<?php echo $img;?>" width="150" height="150">
-                                            <input type="hidden" name="old_img" value="<?php echo $img;?>">
+                                            <img src="../admin/img/<?php echo $file;?>" width="150" height="150">
+                                            <input type="hidden" name="old_img" value="<?php echo $file;?>">
                                         </div>
                                     </div>
 

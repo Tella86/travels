@@ -112,12 +112,8 @@
      # Rewrite for logout.html
      RewriteRule ^$ logout.php [L]
 
-      # Rewrite for table-datatable.html
-      RewriteRule ^$ table-datatable.php [L]
-
-      # Rewrite for map.html
-      RewriteRule ^$ map.php [L]
-
+      # Rewrite for teble-datatable.html
+      RewriteRule ^$ teble-datatable.php [L]
 
 
 
