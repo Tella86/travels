@@ -98,8 +98,8 @@ echo "Error: " . $e->getMessage();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Tours and Travel Management</title>
+    <link rel="shortcut icon" href="../admin/settings/logo.png" type="image/x-icon">
+    <title>Pwani Marine Travels</title>
 
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 

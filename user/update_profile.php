@@ -41,9 +41,9 @@ try {
   
 catch(PDOException $e)
     {
-    echo $sql . "<br>" . $e->getMessage();
+    // echo $sql . "<br>" . $e->getMessage();
 
-  header("location:../update_profile.php");
+//   header("location:../update_profile.php");
     }
 
 $conn = null;

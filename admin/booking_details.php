@@ -92,7 +92,11 @@ session_start();
                                 <tbody>
 
                                     <?php
-include"config.php";
+$servername = 'localhost';
+$username = 'root';
+$password = 'Elon2508/*-';
+$dbname = 'tour1';
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -113,6 +117,7 @@ $abc = $stmt1->setFetchMode(PDO::FETCH_ASSOC);
     $name=$stmt1->fetch(PDO::FETCH_ASSOC);
 
 
+    
  $stmt2 = $conn->prepare("SELECT * FROM packages where id='".$value['package_id']."'");
 $stmt2->execute();
 $abc = $stmt2->setFetchMode(PDO::FETCH_ASSOC);  

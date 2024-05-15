@@ -11,14 +11,11 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 ?>
 <style>
-/* Additional styling can be applied here */
 .kenyan-currency {
     font-size: 24px;
-    /* Adjust size as needed */
     font-weight: bold;
     color: white;
-    /* Adjust color as needed */
-    /* Add any other custom styles */
+   
 }
 </style>
 <div class="page-wrapper">
@@ -308,9 +305,9 @@ try {
                                         <td style="width:10px"><?php echo $value['from_date']; ?></td>
                                         <td style="width:10px"><?php echo $value['to_date']; ?></td>
                                         <td style="width:5px">
-                                            <?php echo $currency["curr_symbol"] . ' ' . $value['total']; ?></td>
+                                            <?php echo $value['total']; ?></td>
                                         <td style="width:5px">
-                                            <?php echo $currency["curr_symbol"] . ' ' . $value['adv_amount']; ?></td>
+                                            <?php echo  $value['adv_amount']; ?></td>
 
 
                                     </tr>
@@ -427,9 +424,9 @@ try {
                                         <td style="width:10px"><?php echo $value['from_date']; ?></td>
                                         <td style="width:10px"><?php echo $value['to_date']; ?></td>
                                         <td style="width:5px">
-                                            <?php echo $currency["curr_symbol"] . ' ' . $value['total']; ?></td>
+                                            <?php echo $value['total']; ?></td>
                                         <td style="width:5px">
-                                            <?php echo $currency["curr_symbol"] . ' ' . $value['adv_amount']; ?></td>
+                                            <?php echo $value['adv_amount']; ?></td>
 
 
                                     </tr>
@@ -508,8 +505,8 @@ try {
 
                                         <td><?php echo $value['id']; ?></td>
                                         <td><?php echo $cust['name']; ?></td>
-                                        <td><?php echo $currency["curr_symbol"] . ' ' . $value['total_amount']; ?></td>
-                                        <td><?php echo $currency["curr_symbol"] ?>
+                                        <td><?php echo $value['total_amount']; ?></td>
+                                        <td>
                                             <?php echo $value['total'] - $value['total_amount']; ?></td>
 
 

@@ -4,6 +4,8 @@ $username   = "root";
 $password   = "Elon2508/*-";
 $dbname     = "tour1";
 
+
+
 $currency = "Ksh.";
 
 ini_set('date.timezone', 'Africa/Nairobi');

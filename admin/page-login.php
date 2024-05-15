@@ -114,8 +114,8 @@ try {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Tours and Travels Management System</title>
+    <link rel="shortcut icon" href="settings/logo.png" type="image/x-icon">
+    <title>Pwani Marine Travels</title>
 
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
 
@@ -146,7 +146,7 @@ try {
                             <div class="login-form">
                                 <center> <img src="../admin/settings/logo.png" style="height:auto; width: 190px;" alt="homepage" class="dark-logo" />
                                 </center>
-                                <br><br><br><br>
+                                <br>
                                 <form method="post">
                                     <div class="form-group">
                                         <label>Email address</label>

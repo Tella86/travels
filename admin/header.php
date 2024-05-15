@@ -38,8 +38,8 @@ $conn = null;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="../admin/settings/logo.png">
-
+    <link rel="shortcut icon" href="settings/logo.png" type="image/x-icon">
+    <title>Pwani Marine Travels</title>
 
 
     <title><?php echo $title; ?></title>
